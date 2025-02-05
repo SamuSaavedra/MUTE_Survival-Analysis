@@ -23,7 +23,7 @@ ggplot(data_f_prob_masa, aes(x = x, y = y)) +
   theme(plot.title = element_text(hjust = 0.5, face = "bold"))
 
 
-## 2. Función de distribución [F(x)]
+## 2. Función de distribución (acumulada) [F(x)]
 ## F(x) = P(X <= x).
 prob_f_distrib <- cumsum(prob_f_prob_masa)
 data_f_distrib <- data.frame(x = meses, y = prob_f_distrib)
